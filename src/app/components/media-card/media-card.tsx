@@ -15,7 +15,7 @@ interface Links {
 export default function MediaCard({ src, title, body, links }: MediaCard) {
   return (
     <div className='media-card h-auto w-full xl:max-w-[389px]'>
-      <div className='image-wrapper w-full h-full relative'>
+      <div className='image-wrapper w-full h-full relative mb-5'>
         <Image
           className='w-full h-auto'
           src={src}
@@ -26,9 +26,10 @@ export default function MediaCard({ src, title, body, links }: MediaCard) {
         />
       </div>
 
-      <div className='media-card-title font-brown uppercase text-xl font-semibold mb-[10px]'>
+      <div className='media-card-title font-brown uppercase text-xl font-semibold mb-[10px] hover:underline hover:cursor-pointer'>
         {title}
       </div>
+
       <div className='media-card-body'>
         <p className='font-brown font-thin mb-2'>{body}</p>
         <div className='media-card-links'></div>

@@ -3,8 +3,22 @@
 
 @font-face {
   font-family: 'Brown';
+  font-style: normal;
   src: local('Brown'),
     url('/public/fonts/brown/BrownLight\ Regular.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Brown';
+  font-style: medium;
+  src: local('Brown'),
+    url('/public/fonts/brown/BrownMedium\ Regular.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Brown';
+  font-style: bold;
+  src: local('Brown'), url('/public/fonts/brown/Brown\ Bold.ttf') format('ttf');
 }
 
 @tailwind utilities;
