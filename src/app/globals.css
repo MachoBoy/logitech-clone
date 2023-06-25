@@ -8,3 +8,7 @@
 }
 
 @tailwind utilities;
+
+.slick-slide {
+  margin-right: 20px;
+}
