@@ -1,5 +1,6 @@
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import { config } from '@fortawesome/fontawesome-svg-core';
+import GlobalHeader from './components/global-header/global-header';
 import Nav from './components/nav/nav';
 import './globals.css';
 import { Inter } from 'next/font/google';
@@ -34,6 +35,7 @@ export default function RootLayout({
         />
       </head>
       <body className={inter.className}>
+        <GlobalHeader />
         <Nav />
         {children}
       </body>
