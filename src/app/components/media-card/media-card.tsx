@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import Image from 'next/image';
 
 interface MediaCard {
@@ -32,7 +34,25 @@ export default function MediaCard({ src, title, body, links }: MediaCard) {
 
       <div className='media-card-body'>
         <p className='font-brown font-thin mb-2'>{body}</p>
-        <div className='media-card-links'></div>
+        <div className='media-card-links flex flex-col'>
+          {links.map(({ title, link }, index) => {
+            return (
+              <a
+                key={index}
+                className='media-link mb-3 last:mb-0 group'
+                href={link}
+              >
+                <span className='text-sm font-semibold uppercase mr-2 group-hover:underline'>
+                  {title}
+                </span>
+                <FontAwesomeIcon
+                  icon={faChevronRight}
+                  style={{ color: '#2f3132' }}
+                />
+              </a>
+            );
+          })}
+        </div>
       </div>
     </div>
   );

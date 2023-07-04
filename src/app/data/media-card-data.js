@@ -5,8 +5,12 @@ const mediaCardData = [
     body: 'Experience the performance and versatility of MX Anywhere 3S, an iconic compact mouse, now with an 8K DPI sensor and Quiet Clicks.',
     links: [
       {
-        title: '',
-        link: '',
+        title: 'shop mx anyware 3s',
+        link: '#',
+      },
+      {
+        title: 'learn more',
+        link: '#',
       },
     ],
   },
@@ -16,8 +20,8 @@ const mediaCardData = [
     body: 'All-in-one video bar for huddle and small rooms. Now available for pre-order',
     links: [
       {
-        title: '',
-        link: '',
+        title: 'discover rally bar huddle',
+        link: '#',
       },
     ],
   },
@@ -27,8 +31,8 @@ const mediaCardData = [
     body: 'See and hear clearly with an intelligent tabletop conference camera. Now available for pre-order',
     links: [
       {
-        title: '',
-        link: '',
+        title: 'discover logitech sight',
+        link: '#',
       },
     ],
   },
