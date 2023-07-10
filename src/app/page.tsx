@@ -2,6 +2,7 @@ import MainBanner from './components/main-banner/main-banner';
 import MediaCard from './components/media-card/media-card';
 import SlickSlider from './components/slick-slider/slick-slider';
 import mediaCardData from './data/media-card-data';
+import ItemCard from './components/item-card/item-card';
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
               );
             })}
           </SlickSlider>
+          <ItemCard />
         </div>
       </div>
     </main>
